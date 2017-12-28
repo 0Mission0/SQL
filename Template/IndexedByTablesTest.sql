@@ -3,6 +3,11 @@ DECLARE
     TYPE strArrayType IS TABLE OF varchar2(100)
         INDEX BY BINARY_INTEGER;
     v_strArray strArrayType;
+    
+    TYPE associateTableType IS TABLE OF varchar2(20)
+        INDEX BY BINARY_INTEGER;
+    v_array2 associateTableType;
+    
 BEGIN
     v_strArray(1) := '一';
     v_strArray(2) := '二';
