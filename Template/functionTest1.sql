@@ -1,0 +1,16 @@
+CREATE OR REPLACE FUNCTION fun01 RETURN varchar2
+IS
+BEGIN
+    RETURN 'Hello World!';
+END;
+
+--
+
+SET SERVEROUTPUT ON;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('fun01 = ' || fun01());
+END;
+
+--
+
+DROP FUNCTION fun01;
